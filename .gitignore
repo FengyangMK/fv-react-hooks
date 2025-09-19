@@ -1,0 +1,11 @@
+node_modules
+node_modules/
+.DS_Store
+**/build
+**/dist
+**/es
+**/coverage
+
+pnpm-lock.yaml
+yarn.lock
+
