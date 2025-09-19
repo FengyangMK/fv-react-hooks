@@ -9,3 +9,5 @@ const count = 1
 export const useCount = () => {
     return count
 }
+
+console.log(1111)
