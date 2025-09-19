@@ -11,6 +11,12 @@
     "author": "",
     "license": "ISC",
     "packageManager": "pnpm@10.12.1",
+    "lint-staged": {
+        "**/*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --cache --write"
+        ]
+    },
     "devDependencies": {
         "@eslint/js": "^9.35.0",
         "eslint": "^9.35.0",
@@ -26,11 +32,5 @@
     "dependencies": {
         "lint-staged": "^16.1.6",
         "tsup": "^8.5.0"
-    },
-    "lint-staged": {
-        "**/*.{js,jsx,ts,tsx}": [
-            "eslint --fix",
-            "prettier --cache --write"
-        ]
     }
 }

@@ -17,7 +17,7 @@ export default defineConfig([
     pluginReact.configs.flat.recommended,
     {
         rules: {
-            'no-console': 'warn',
+            'no-console': 'error',
             'simple-import-sort/imports': 'error',
             'simple-import-sort/exports': 'error',
             'prettier/prettier': [
@@ -26,7 +26,9 @@ export default defineConfig([
                     semi: false,
                     singleQuote: true,
                     trailingComma: 'none',
-                    tabWidth: 4
+                    tabWidth: 4,
+                    endOfLine: 'auto',
+                    printWidth: 140
                 }
             ]
         },
