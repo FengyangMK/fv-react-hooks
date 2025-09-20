@@ -17,7 +17,7 @@ export default defineConfig([
     pluginReact.configs.flat.recommended,
     {
         rules: {
-            'no-console': 'error',
+            'no-console': 'off',
             'simple-import-sort/imports': 'error',
             'simple-import-sort/exports': 'error',
             'prettier/prettier': [
@@ -35,6 +35,7 @@ export default defineConfig([
         plugins: {
             prettier: prettier,
             'simple-import-sort': simpleImportSort
-        }
+        },
+        ignores: ['**/node_modules/**', '**/dist/**', '**/es/**']
     }
 ])
