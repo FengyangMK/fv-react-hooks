@@ -9,7 +9,3 @@ const count = 1
 export const useCount = () => {
     return count
 }
-
-console.log(version)
-
-// const tt = 111

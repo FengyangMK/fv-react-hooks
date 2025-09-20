@@ -1,5 +1,5 @@
 import js from '@eslint/js'
-import { defineConfig } from 'eslint/config'
+import { defineConfig, globalIgnores } from 'eslint/config'
 import prettier from 'eslint-plugin-prettier'
 import pluginReact from 'eslint-plugin-react'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
@@ -17,7 +17,7 @@ export default defineConfig([
     pluginReact.configs.flat.recommended,
     {
         rules: {
-            'no-console': 'off',
+            'no-console': 'error',
             'simple-import-sort/imports': 'error',
             'simple-import-sort/exports': 'error',
             'prettier/prettier': [
@@ -30,12 +30,14 @@ export default defineConfig([
                     endOfLine: 'auto',
                     printWidth: 140
                 }
-            ]
+            ],
+            'react/react-in-jsx-scope': 'off',
+            'react/jsx-uses-react': 'off'
         },
         plugins: {
             prettier: prettier,
             'simple-import-sort': simpleImportSort
-        },
-        ignores: ['**/node_modules/**', '**/dist/**', '**/es/**']
-    }
+        }
+    },
+    globalIgnores(['**/node_modules/**', '**/dist/**', '**/es/**'])
 ])
