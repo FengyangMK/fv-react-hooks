@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
+# 提交前校验代码 
 pnpm lint
+
