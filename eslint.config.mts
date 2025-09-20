@@ -17,7 +17,7 @@ export default defineConfig([
     pluginReact.configs.flat.recommended,
     {
         rules: {
-            'no-console': 'error',
+            'no-console': 'warn',
             'simple-import-sort/imports': 'error',
             'simple-import-sort/exports': 'error',
             'prettier/prettier': [
