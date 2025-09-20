@@ -1,4 +1,4 @@
-const version = '1.0.0'
+const version = '1.0.8'
 
 export const useVersion = () => {
     return version
@@ -10,6 +10,6 @@ export const useCount = () => {
     return count
 }
 
-// console.log(1111)
+console.log(version)
 
 // const tt = 111

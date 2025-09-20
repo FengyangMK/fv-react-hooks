@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "turbo run build",
+        "dev": "turbo run dev",
         "lint": "eslint \"{packages,apps}/**/*.{.js,jsx,ts,tsx}\"",
         "prepare": "husky",
         "commit": "git-cz"
@@ -37,6 +38,7 @@
         "globals": "^16.4.0",
         "jiti": "^2.5.1",
         "prettier": "3.6.2",
+        "turbo": "^2.5.6",
         "typescript": "^5.9.2",
         "typescript-eslint": "^8.44.0"
     },
